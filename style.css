@@ -1,6 +1,9 @@
+.wrap {
+  height: 100px;
+  overflow: hidden;
+}
 img {
   width: 100px;
-  border-radius: 50%;
 }
 body {
   background: white;
@@ -8,7 +11,7 @@ body {
   font-family: 'Roboto Mono', Menlo, monospace;
   text-align: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   margin: auto;
   margin-top: 72px;
 }
@@ -49,7 +52,7 @@ li bl {
   float: center;
   color: dimgray;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -65,3 +68,84 @@ li bl {
   font-family: 'Luminari', fantasy;
   font-size: 22px;
 }
+.content {
+  text-align: center;
+}
+.hover-opacity:hover {
+  opacity: 0.60;
+}
+.row-padding, .row-padding>.third {
+  padding:0 30px;
+
+}
+.container {
+  padding:0.01em 16px;
+  width: 200px;
+  height: 250px;
+  border: solid ghostwhite;
+  border-width: 10px;
+}
+.container:after, .container:before {
+  content:"";
+  display: table;
+  clear: both;
+}
+.third {
+  float: left;
+  width: 100%;
+  padding:0 8px;
+}
+@media (min-width:601px) {
+  .w3-col.m1 {
+    width:8.33333%
+  }
+  .w3-col.m2 {
+    width:16.66666%
+  }
+  .w3-col.m3,.w3-quarter {
+    width:24.99999%
+  }
+  .col.m4,.third {
+    width:33.33333%;
+    flex: 33.33333%;
+  }
+.margin-bottom {
+  margin-bottom:16px;
+}
+.white {
+  color: black;
+  background-color: gainsboro;
+  width: 200px;
+}
+.projectdescription {
+  font-size: 12px;
+}
+.projecttitle {
+  font-size: 18px;
+}
+.projectimg {
+  height: 100px;
+  overflow: hidden;
+}
+.main, #main {
+  transition:margin-left .4s;
+}
+@media (max-width:1000px) {
+  .main {
+    margin-left:0;
+    margin-right:0;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 33.33333%;
+  padding: 0 4px;
+}
+
+
+
+
